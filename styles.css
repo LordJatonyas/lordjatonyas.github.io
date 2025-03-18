@@ -1,16 +1,40 @@
+/* General Styles */
 body {
-  background-color: white;
-  color: black;
-  font-family: Monospace;
+  font-family: monospace;
+  margin: 10px;
+  padding: 10px;
+  background-color: beige; /* Light mode background */
+  color: black; /* Light mode text color */
 }
 
-body.dark-mode {
-  background-color: black;
-  color: white;
+header, main, footer {
+  padding: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 20px;
-  cursor: pointer;
+header {
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: black; /* Light blue for icons */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer i {
+  font-size: 24px;
+  color: black; /* Explicitly set icon color */
 }
