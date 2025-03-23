@@ -20,8 +20,15 @@ main {
   margin: 0 auto;
 }
 
-section {
+/*section {
   margin-bottom: 20px;
+}*/
+.menu ul, .menu input, .menu .closer, .menu input:checked~.opener {
+  display: none;
+}
+
+.menu input:checked~ul, .menu input:checked~.closer {
+  display: block;
 }
 
 footer {
@@ -41,4 +48,10 @@ footer i {
 
 a:link, a:visited {
   color: black;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="radcam_logo.png">
   <link rel="stylesheet" href="styles.css">
   <!-- Add Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -11,31 +12,44 @@
 <body>
   <header>
     <h1>John Lee</h1>
-    data tinkerer | wearables believer | software enjoyer
+    python tinkerer | technoloJesus believer | rust enjoyer
   </header>
 
   <main>
-    <section id="about">
-      <h2>whoami</h2>
-      <p>• I'm a 4th year engineering undergraduate at Oxford, focusing on bioengineering + data science.
-      </p>
-      <p>• I work with wearables and biosignals.
-      </p>
-    </section>
+    <ul class="menu">
+    <li>
+      <input type="radio" name="menuopt" id="about" />
+      <label class="opener prevent-select" for="about"><h2>whoami</h2></label>
+      <label class="closer prevent-select" for="dropclose"><h2>whoami</h2></label>
+      <ul>
+        <li>I'm a 4th year engineering undergraduate at Oxford, focusing on bioengineering + data science.</li>
+        <li>I work with wearables and biosignals.</li>
+      </ul>
+    </li>
 
-    <section id="projects">
-      <h2>ls projects/</h2>
-      <p>• <i><a href="">AutoPhysio</a></i>: An active knee brace for early phase home-based ACL rehab.
-      </p>
-      <p>• EMG Gym analysis software.
-      </p>
-    </section>
+    <li>
+      <input type="radio" name="menuopt" id="projects" />
+      <label class="opener prevent-select" for="projects"><h2>ls projects/</h2></label>
+      <label class="closer prevent-select" for="dropclose"><h2>ls projects/</h2></label>
+      <ul>
+        <li><i><a href="https://github.com/LordJatonyas/lordjatonyas.github.io/blob/main/files/3YP_ACLR_Physio.pdf" target=_blank>AutoPhysio</a></i>: An active knee brace for early phase home-based ACL rehab.
+        </li>
+        <li><i><a href="https://github.com/LordJatonyas/B1-Project" target=_blank>B1 Engineering Computation</a></i>
+        </li>
+        <li>EMG Gym analysis software.
+        </li>
+      </ul>
+    </li>
 
-    <section id="thoughts">
-      <h2>ls thoughts/</h2>
-      <p>
-      </p>
-    </section>
+    <li>
+      <input type="radio" name="menuopt" id="thoughts" />
+      <label class="opener prevent-select" for="thoughts"><h2>ls thoughts/</h2></label>
+      <label class="closer prevent-select" for="dropclose"><h2>ls thoughts/</h2></label>
+      <ul>
+      </ul>
+      <input type="radio" name="menuopt" id="dropclose" />
+    </li>
+  </ul>
   </main>
 
   <footer>
