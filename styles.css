@@ -2,6 +2,7 @@
 body {
   font-family: monospace;
   padding: 10px;
+  font-size: 1.2em;
   background-color: #fdf5e6;
   color: black;
 }
@@ -20,23 +21,28 @@ main {
   margin: 0 auto;
 }
 
-/*section {
-  margin-bottom: 20px;
-}*/
-.menu ul, .menu input, .menu .closer, .menu input:checked~.opener {
-  display: none;
+details {
+  padding: 10px;
 }
 
-.menu input:checked~ul, .menu input:checked~.closer {
-  display: block;
+summary {
+  font-size: 1.5em;
+}
+
+li {
+  padding: 8px;
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
 footer a {
-  color: black; /* Light blue for icons */
+  color: black;
   text-decoration: none;
   margin: 0 10px;
 }
