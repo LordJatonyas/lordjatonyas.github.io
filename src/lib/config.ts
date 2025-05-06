@@ -17,7 +17,7 @@ export const hi = {
 	what_is_this: `Welcome to my webpage.`,
 	who_am_i: `I'm an Engineering Science student at Oxford with a passion for wearable technology.`,
 	button: {
-		text: `Get in touch!`,
+		text: `Talk on X!`,
 		href: socials.x
 	}
 };
@@ -27,7 +27,7 @@ export const about = {
 	section_id: 'About',
 	paragraphs: [
 		`Hello! My name is John.`,
-		`I'm a final year engineering student at Oxford, with keen ambitions in the wearable technology space.
+		`I'm a final year engineering student at Oxford, with keen ambitions in wearable technology.
 		I am currently building a stealth startup (AIMO Labs) in this space, with plans to launch 
 		late 2025 - early 2026, so stay tuned!`,
 		`As an engineer, these are some technical skills I'm most proficient with:`
@@ -36,9 +36,10 @@ export const about = {
 		'Python',
 		'Reinforcement Learning',
 		'Signal Analysis',
-		'Electrodiagnostics',
+		'Biometrics',
 		'Git',
-		'Linux'
+		'Linux',
+        ''
 	]
 };
 
@@ -156,10 +157,10 @@ export const contact = {
 	section_title: 'Get in Touch',
 	section_id: 'Contact',
 	paragraphs: [
-		`The best way to get hold of me is to DM me on X, always happy to talk about ideas, projects, partnerships, etc.!`
+		`The best way to get hold of me is to DM me on X, but also happy to talk through email.!`
 	],
 	button: {
-		text: `Say Hello`,
-		href: socials.x
+		text: `Say Hi!`,
+		href: "mailto: john.1201@icloud.com"
 	}
 };
