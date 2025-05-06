@@ -34,11 +34,11 @@ export const about = {
 	],
 	skills: [
 		'Python',
-		'Reinforcement Learning',
+		'Git',
 		'Signal Analysis',
 		'Biometrics',
-		'Git',
 		'Linux',
+		'Reinforcement Learning',
 	]
 };
 
@@ -113,7 +113,7 @@ export const projects = {
 			title: 'Oxford BuildX 2025: Paperpal',
 			points: [
 				'Finalist and connected to VC.',
-				'A resesarch tool to chat about research papers.'
+				'A research tool to chat about research papers.'
 			],
 			tools: ['Lovable', 'Supabase', 'Typescript'],
 		},
@@ -127,7 +127,7 @@ export const projects = {
 			title: 'AutoPhysio',
 			points: [
 				"3rd year design project at Oxford.",
-				'EMG-empowered knee brace for ACL rehab.'
+				'EMG-powered knee brace for ACL rehab.'
 			],
 			tools: ['Python', 'typst', 'Swift'],
 		},
