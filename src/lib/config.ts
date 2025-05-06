@@ -160,7 +160,7 @@ export const contact = {
 		`The best way to get hold of me is to DM me on X, but also happy to talk through email.!`
 	],
 	button: {
-		text: `Say Hi!`,
+		text: `Email me!`,
 		href: "mailto: john.1201@icloud.com"
 	}
 };
