@@ -157,7 +157,7 @@ export const contact = {
 	section_title: 'Get in Touch',
 	section_id: 'Contact',
 	paragraphs: [
-		`The best way to get hold of me is to DM me on X, but also happy to talk through email.!`
+		`The best way to get hold of me is to DM me on X, but also happy to talk through email!`
 	],
 	button: {
 		text: `Email me!`,
