@@ -39,7 +39,6 @@ export const about = {
 		'Biometrics',
 		'Git',
 		'Linux',
-        ''
 	]
 };
 
