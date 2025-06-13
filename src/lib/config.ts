@@ -15,10 +15,10 @@ export const hi = {
 	greeting: `Hi, my name is`,
 	name: `John Lee`,
 	what_is_this: `Welcome to my webpage.`,
-	who_am_i: `I'm an Engineering Science student at Oxford with a passion for wearable technology.`,
+	who_am_i: `I am the cofounder of AiMo Labs, a biometrics startup building software for wearable tech. Email me to learn more!`,
 	button: {
-		text: `Talk on X!`,
-		href: socials.x
+		text: `Email me`,
+		href: "mailto: john.1201@icloud.com"
 	}
 };
 
@@ -28,17 +28,11 @@ export const about = {
 	paragraphs: [
 		`Hello! My name is John.`,
 		`I'm a final year engineering student at Oxford, with keen ambitions in wearable technology.
-		I am currently building a stealth startup (AIMO Labs) in this space, with plans to launch 
-		late 2025 - early 2026, so stay tuned!`,
-		`As an engineer, these are some technical skills I'm most proficient with:`
+		I am currently building a stealth startup (AiMo Labs) in this space, with plans to launch 
+		late 2025 - early 2026, so stay tuned!`
 	],
 	skills: [
-		'Python',
-		'Git',
-		'Signal Analysis',
-		'Biometrics',
-		'Linux',
-		'Reinforcement Learning',
+		
 	]
 };
 
@@ -47,8 +41,8 @@ export const experiences = {
 	section_id: 'Experiences',
 	list: [
 		{
-			company: 'AIMO Labs',
-			title: 'Co-founder & Lead Engineer',
+			company: 'AiMo Labs',
+			title: 'Cofounder',
 			when: 'Feb 2025 - present',
 			points: [
 				'Prize winner at OX1 Demo Day 2025.',
@@ -63,7 +57,7 @@ export const experiences = {
 			points: [
 				"Oxford's neurotechnology student society.",
 				'Initiated project workshops that encourage weekly building among society members.',
-				'Independently taught 3 technical workshops to introduce members to increasingly advanced analysis techniques.',
+				'Taught technical workshops to introduce members to advanced analysis techniques.',
 				"Provided technical support to users of the society's equipment."
 			]
 		},
@@ -86,9 +80,8 @@ export const experiences = {
 			href: 'https://ori.ox.ac.uk/student-teams/team-orion/',
 			points: [
 				"Oxford Robotics Institute's student robotics team.",
-				'Established a pipeline for testing speech recognition models and noise reduction performance.',
-				'Assimilated 3 new members into the team, assisting with software setup and understanding of tasks.',
-				"Debugged and demoed our robot during the Engineering Department's 16 Sep Open Day.",
+				'Assimilated new members into the team, assisting with software setup and understanding of tasks.',
+				"Demoed our robot during the Engineering Department's 16 Sep Open Day.",
 				'Implemented programs for hotword detection and speech-to-text transcription for the robot.'
 			]
 		},
@@ -156,10 +149,10 @@ export const contact = {
 	section_title: 'Get in Touch',
 	section_id: 'Contact',
 	paragraphs: [
-		`The best way to get hold of me is to DM me on X, but also happy to talk through email!`
+		`Send me an email if you're interested in investing in or joining AiMo Labs, or even just to chat about cool technologies in general!`
 	],
 	button: {
-		text: `Email me!`,
+		text: `Email me`,
 		href: "mailto: john.1201@icloud.com"
 	}
 };
