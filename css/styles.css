@@ -136,6 +136,56 @@ p b {
     color: var(--text);
 }
 
+/* Returns table */
+.returns-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.returns-table caption {
+    caption-side: top;
+    padding-bottom: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: left;
+}
+
+.returns-table thead th {
+    background: rgba(11, 103, 255, 0.05);
+    font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.returns-table th,
+.returns-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.returns-table tbody tr:last-child th,
+.returns-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.returns-table th[scope="row"] {
+    text-align: left;
+    font-weight: 500;
+}
+
+.returns-table td {
+    text-align: right;
+}
+
+.returns-table tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.01);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     body {
