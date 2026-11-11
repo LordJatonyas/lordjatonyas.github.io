@@ -47,8 +47,9 @@
         <h2>Portfolio</h2>
 
         <p>The table below shows my personal investment portfolio performance (P&L ratio measured in TWR). I started in early 2021, was largely passive from 2022 to 2024, and became active from early 2025.</p>
-        <table class="returns-table">
-            <caption>Gross Returns (%)</caption>
+        <p class="table-caption" id="returns-caption">Gross Returns (%)</p>
+        <div class="table-scroll">
+        <table class="returns-table" aria-labelledby="returns-caption">
             <thead>
                 <tr>
                     <th scope="col">Year</th>
@@ -178,11 +179,12 @@
                     <td>-2.26</td>
                     <td>&mdash;</td>
                     <td>&mdash;</td>
-                    <td>+51.64</td>
+                    <td>+51.65</td>
                     <td>+154.59</td>
                 </tr>
             </tbody>
         </table>
+        </div>
     </main>
 
     <script>

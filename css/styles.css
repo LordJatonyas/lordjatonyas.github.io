@@ -137,22 +137,50 @@ p b {
 }
 
 /* Returns table */
+.table-caption {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+}
+
+/* Always-visible scrollbar (WebKit/Blink hide overlay scrollbars by default) */
+.table-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background: var(--muted);
+    border-radius: 4px;
+}
+
+/* Firefox */
+@supports (-moz-appearance: none) {
+    .table-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: var(--muted) var(--border);
+    }
+}
+
 .returns-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 28px;
     font-size: 0.9rem;
     border: 1px solid var(--border);
     border-radius: 8px;
     overflow: hidden;
-}
-
-.returns-table caption {
-    caption-side: top;
-    padding-bottom: 8px;
-    font-size: 0.85rem;
-    color: var(--muted);
-    text-align: left;
 }
 
 .returns-table thead th {
@@ -165,6 +193,7 @@ p b {
 .returns-table th,
 .returns-table td {
     padding: 8px 10px;
+    white-space: nowrap;
     border-bottom: 1px solid var(--border);
 }
 
