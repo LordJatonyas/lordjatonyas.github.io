@@ -176,11 +176,12 @@ p b {
 
 .returns-table {
     width: 100%;
-    border-collapse: collapse;
+    /* separate (not collapse) so the sticky column's borders travel with it */
+    border-collapse: separate;
+    border-spacing: 0;
     font-size: 0.9rem;
     border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow: hidden;
+    border-left: none; /* drawn on the sticky column instead */
 }
 
 .returns-table thead th {
@@ -209,6 +210,22 @@ p b {
 
 .returns-table td {
     text-align: right;
+}
+
+/* Sticky "Year" column: stays pinned while the table scrolls horizontally */
+.returns-table tr > :first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: var(--bg);
+    border-left: 1px solid var(--border);
+    box-shadow: inset -1px 0 0 var(--border);
+    transition: background-color 0.2s ease;
+}
+
+/* Header cell: opaque base plus the header tint on top */
+.returns-table thead tr > :first-child {
+    background-image: linear-gradient(rgba(11, 103, 255, 0.05), rgba(11, 103, 255, 0.05));
 }
 
 .returns-table tbody tr:nth-child(even) {
